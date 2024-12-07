@@ -1,2 +1,20 @@
-# recipes-and-ratings-analysis
-Portfolio homework for EECS 398 at the University of Michigan
+# Recipe for Success: Predicting the Success of Recipes on Food.com
+By Matthew Yeh
+
+## Introduction
+
+
+
+## Data Cleaning and Exploratory Data Analysis
+
+
+
+## Framing a Prediction Problem
+
+
+
+## Baseline Model
+
+
+
+## Final Model
