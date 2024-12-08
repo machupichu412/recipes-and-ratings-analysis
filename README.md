@@ -26,7 +26,7 @@ This involved loading the data from the recipe file, which contained the recipe 
 
 2. Creating new columns based off of the `nutrition` column: The `nutrition` column contained lists of nutritional information for each recipe. I extracted the calories, total fat, sugar, sodium, protein, saturated fat, and carbohydrates from the lists and created new columns for each of these values. I then removed the `nutrition` column from the DataFrame.
 
-3. Cleaning the data: I removed any rows with missing values in the `avg_rating`column. There were no missing values in any other quantitative columns, so I did not need to remove any other rows.
+3. Cleaning the data: I removed any rows with missing values in the `avg_rating`column. There were no missing values in any other quantitative columns, so I did not need to remove any other rows. I did not impute any missing values, as it would not make sense to impute the average rating of a recipe.
 
 4. Exploratory Data Analysis: I created a number of visualizations to explore the relationships between the features in the dataset. I found that recipes that take longer to make tend to have more steps, and that recipes with more ingredients tend to have more steps.
 
