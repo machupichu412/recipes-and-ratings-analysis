@@ -74,7 +74,7 @@ I will be predicting the number of steps in a recipe, which is a regression prob
 
 I will be using the mean squared error as the metric to evaluate my model. I chose this metric because it penalizes large errors more than the mean absolute error, which is important because I want to minimize the number of large errors in my predictions. The mean squared error is also easier to interpret than other metrics such as the mean absolute percentage error, which can be difficult to interpret when the target variable has a wide range of values.
 
-The $$R^2$$ score will also be used to evaluate the model. This metric measures the proportion of the variance in the target variable that is predictable from the features. It is a useful metric for regression problems because it provides an indication of how well the model explains the variance in the target variable.
+The R<sup>2</sup> score will also be used to evaluate the model. This metric measures the proportion of the variance in the target variable that is predictable from the features. It is a useful metric for regression problems because it provides an indication of how well the model explains the variance in the target variable.
 
 <!-- Note: Make sure to justify what information you would know at the “time of prediction” and to only train your model using those features. For instance, if we wanted to predict your Final Exam grade, we couldn’t use your Portfolio Homework grade, because we (probably) won’t have the Portfolio Homework graded before the Final Exam! Feel free to ask questions if you’re not sure. -->
 
@@ -91,7 +91,7 @@ These were chosen based on the results from the aggregated table, which showed t
 
 No encoding was necessary, as both of these features are already quantitative. The performance of the model is as follows:
 - Mean Squared Error: 39.79106912197526
-- $$R^2$$ Score: 0.0005333644176367391
+- R<sup>2</sup> Score: 0.0005333644176367391
 
 The baseline model is not very good, as the R^2 score is very low and the mean squared error is relatively high, indicating that the model does not explain much of the variance in the number of steps in the recipes.
 
@@ -119,8 +119,8 @@ The regularization hyperparameter that performed the best was alpha=0.03125 or $
 These hyperparameters were selected using cross-validation. The final model's performance is as follows:
 
 - Mean Squared Error: 29.4196790148663
-- $$R^2$$ Score: 0.2610405235715909
+- R<sup>2</sup> Score: 0.2610405235715909
 
-The final model is an improvement over the baseline model, with a lower mean squared error and a higher $$R^2$$ score, indicating that the model explains more of the variance in the number of steps in the recipes. This increase in performance is likely due to the addition of features that are more likely related to the number of steps in a recipe, and the use of a more complex model that can capture non-linear relationships between the features and the target variable. However, there is still room for improvement, as the $$R^2$$ score is still relatively low.
+The final model is an improvement over the baseline model, with a lower mean squared error and a higher R<sup>2</sup> score, indicating that the model explains more of the variance in the number of steps in the recipes. This increase in performance is likely due to the addition of features that are more likely related to the number of steps in a recipe, and the use of a more complex model that can capture non-linear relationships between the features and the target variable. However, there is still room for improvement, as the R<sup>2</sup> score is still relatively low.
 
 <!-- Optional: Include a visualization that describes your model’s performance, e.g. a confusion matrix, if applicable. -->
