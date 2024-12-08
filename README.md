@@ -35,7 +35,7 @@ This involved loading the data from the recipe file, which contained the recipe 
 <iframe
   src="assets/n_step_dist.html"
   width="100%"
-  height="100%"
+  height="600"
   frameborder="0"
   display= "block"
   margin="0"
@@ -47,7 +47,7 @@ This involved loading the data from the recipe file, which contained the recipe 
 <iframe
   src="assets/N_Steps_vs_N_Ingredients.html"
   width="100%"
-  height="100%"
+  height="600"
   frameborder="0"
   display= "block"
   margin="0"
