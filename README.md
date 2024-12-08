@@ -4,7 +4,7 @@ By Matthew Yeh
 
 ## Introduction
 
-Have you ever wondered how many steps a recipe has before you start cooking? This project aims to predict the number of steps in a recipe based on features such as its average rating and the number of minutes it takes to make.
+Have you ever wondered how many steps a recipe has before you start cooking? This project aims answer the question, "What is the relationship between recipe features such as the number of ingredients and average rating with the number of steps in the recipe?" The project aims to predict the number of steps in a recipe based on features such as its average rating and the number of minutes it takes to make.
 
 The dataset this project is based on contains recipes and ratings from [food.com](https://www.food.com/search/?ref=nav). It was originally scraped and used by the authors of [this](https://cseweb.ucsd.edu/~jmcauley/pdfs/emnlp19c.pdf) recommender systems paper.
 
@@ -38,7 +38,6 @@ This involved loading the data from the recipe file, which contained the recipe 
   height="600"
   frameborder="0"
 ></iframe>
-
 The plot above shows the distribution of the number of steps in the recipes. The distribution is right-skewed, with most recipes having fewer than 20 steps but some recipes having far more, with an extreme outlier at 100 steps. The mode is 7 steps, with 6,846 recipes having 7 steps. This indicates that most recipes are relatively simple to make, with only a few steps involved.
 
 <!-- Embed at least one plotly plot that displays the relationship between two columns. Include a 1-2 sentence explanation about your plot, making sure to describe and interpret any trends present and how they answer your initial question. (Your notebook will likely have more visualizations than your website, and that’s fine. Feel free to embed more than one bivariate visualization in your website if you’d like, but make sure that each embedded plot is accompanied by a description.) -->
@@ -49,7 +48,6 @@ The plot above shows the distribution of the number of steps in the recipes. The
   height="600"
   frameborder="0"
 ></iframe>
-
 This plot shows the relationship between the number of steps and the number of ingredients in the recipes. There is generally a positive relationship between the two variables, with recipes with more ingredients tending to have more steps. This makes intuitive sense, as more ingredients would likely require more steps to prepare.
 
 <!-- Embed at least one grouped table or pivot table in your website and explain its significance. -->
@@ -63,13 +61,20 @@ Next, I created a table aggregating the average rating, calories, and number of 
 | 1-2 hrs             |      4.62744 |        558.003 |  13.1389  |
 | 2+ hrs              |      4.59355 |        553.625 |  12.3121  |
 
+
 The table shows that recipes that take longer to make tend to have lower ratings, more calories, and more steps.
 
 ## Framing a Prediction Problem
 
 <!-- Clearly state your prediction problem and type (classification or regression). If you are building a classifier, make sure to state whether you are performing binary classification or multiclass classification. Report the response variable (i.e. the variable you are predicting) and why you chose it, the metric you are using to evaluate your model and why you chose it over other suitable metrics (e.g. accuracy vs. F1-score). -->
 
-Based on the analysis in the  
+Based on the analysis in the previous section, there appear to be relationships between the number of steps in a recipe and features such as the time in minutes to make, the average rating, the number of ingredients, and the number of calories. I will use these features to predict the number of steps in a recipe, all of which would be known at the time of prediction for a given recipe from food.com.
+
+I will be predicting the number of steps in a recipe, which is a regression problem. The response variable is `n_steps`, which is a quantitative variable. I chose this variable because it is likely to be related to the complexity of the recipe and can be predicted using the other features in the dataset.
+
+I will be using the mean squared error as the metric to evaluate my model. I chose this metric because it penalizes large errors more than the mean absolute error, which is important because I want to minimize the number of large errors in my predictions. The mean squared error is also easier to interpret than other metrics such as the mean absolute percentage error, which can be difficult to interpret when the target variable has a wide range of values.
+
+The $$R^2$$ score will also be used to evaluate the model. This metric measures the proportion of the variance in the target variable that is predictable from the features. It is a useful metric for regression problems because it provides an indication of how well the model explains the variance in the target variable.
 
 <!-- Note: Make sure to justify what information you would know at the “time of prediction” and to only train your model using those features. For instance, if we wanted to predict your Final Exam grade, we couldn’t use your Portfolio Homework grade, because we (probably) won’t have the Portfolio Homework graded before the Final Exam! Feel free to ask questions if you’re not sure. -->
 
