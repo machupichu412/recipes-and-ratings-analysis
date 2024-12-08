@@ -32,8 +32,8 @@ The data cleaning process involved a number of steps:
 
 <iframe
   src="assets/n_step_dist.html"
-  width="100%"
-  height="400"
+  width="800"
+  height="450"
   frameborder="0"
   display= "block"
   margin="0"
@@ -44,8 +44,8 @@ The data cleaning process involved a number of steps:
 
 <iframe
   src="assets/N_Steps_vs_N_Ingredients.html"
-  width="100%"
-  height="400"
+  width="800"
+  height="450"
   frameborder="0"
   display= "block"
   margin="0"
