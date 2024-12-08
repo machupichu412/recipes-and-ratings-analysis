@@ -40,8 +40,7 @@ This involved loading the data from the recipe file, which contained the recipe 
   display= "block"
   margin="0"
   padding="0"
-></iframe>
-The plot above shows the distribution of the number of steps in the recipes. The distribution is right-skewed, with most recipes having fewer than 20 steps but some recipes having far more, with an extreme outlier at 100 steps. The mode is 7 steps, with 6,846 recipes having 7 steps. This indicates that most recipes are relatively simple to make, with only a few steps involved.
+></iframe> The plot above shows the distribution of the number of steps in the recipes. The distribution is right-skewed, with most recipes having fewer than 20 steps but some recipes having far more, with an extreme outlier at 100 steps. The mode is 7 steps, with 6,846 recipes having 7 steps. This indicates that most recipes are relatively simple to make, with only a few steps involved.
 
 <!-- Embed at least one plotly plot that displays the relationship between two columns. Include a 1-2 sentence explanation about your plot, making sure to describe and interpret any trends present and how they answer your initial question. (Your notebook will likely have more visualizations than your website, and that’s fine. Feel free to embed more than one bivariate visualization in your website if you’d like, but make sure that each embedded plot is accompanied by a description.) -->
 
