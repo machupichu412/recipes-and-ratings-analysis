@@ -117,7 +117,7 @@ To create more features, I also used polynomial transformations of the features.
 
 I also used a quantile transformer to transform the `calories (#)` column. This transformation helps the model better capture the relationship between the `calories (#)` column and the target variable by making the data more normally distributed.
 
-The regularization hyperparameter that performed the best was alpha=0.03125 or $2^{-5}$. The polynomial degrees that performed the best was 5 for the `minute` column and 4 for the `n_ingredients` column.
+The regularization hyperparameter that performed the best was alpha=0.03125 or 2^(-5). The polynomial degrees that performed the best was 5 for the `minute` column and 4 for the `n_ingredients` column.
 These hyperparameters were selected using cross-validation. The final model's performance is as follows:
 
 - Mean Squared Error: 29.4196790148663
