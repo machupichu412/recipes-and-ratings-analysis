@@ -20,9 +20,7 @@ The raw dataset has 83782 recipes. The columns that are relevant to this project
 <!-- Describe, in detail, the data cleaning steps you took and how they affected your analyses. The steps should be explained in reference to the data generating process. Show the head of your cleaned DataFrame (see Part 2: Report for instructions). -->
 
 The data cleaning process involved a number of steps:
-1. Assembling the dataset: The dataset was split into two files, so I had to merge them into a single DataFrame.
-
-This involved loading the data from the recipe file, which contained the recipe ID, name, and other information, and the rating file, which contained reviews and ratings for the recipes. I replaced ratings of 0 with NaN values, as ratings range from 1 to 5 stars, meaning 0 ratings indicated invalid or missing data. This ensured that the average ratings would not be skewed by 0 ratings. I then merged the two DataFrames on the recipe ID. I then used this merged DataFrame to calculate the average rating of each recipe by grouping by the recipe ID and taking the mean of the ratings.
+1. Assembling the dataset: The dataset was split into two files, so I had to merge them into a single DataFrame. This involved loading the data from the recipe file, which contained the recipe ID, name, and other information, and the rating file, which contained reviews and ratings for the recipes. I replaced ratings of 0 with NaN values, as ratings range from 1 to 5 stars, meaning 0 ratings indicated invalid or missing data. This ensured that the average ratings would not be skewed by 0 ratings. I then merged the two DataFrames on the recipe ID. I then used this merged DataFrame to calculate the average rating of each recipe by grouping by the recipe ID and taking the mean of the ratings.
 
 2. Creating new columns based off of the `nutrition` column: The `nutrition` column contained lists of nutritional information for each recipe. I extracted the calories, total fat, sugar, sodium, protein, saturated fat, and carbohydrates from the lists and created new columns for each of these values. I then removed the `nutrition` column from the DataFrame.
 
