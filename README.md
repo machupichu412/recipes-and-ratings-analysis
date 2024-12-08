@@ -58,7 +58,6 @@ This plot shows the relationship between the number of steps and the number of i
 <!-- Embed at least one grouped table or pivot table in your website and explain its significance. -->
 Next, I created a table aggregating the average rating, calories, and number of steps for recipes in different time ranges:
 
-<center>
 | time_range (mins)   |   avg_rating |   calories (#) |   n_steps |
 |:--------------------|-------------:|---------------:|----------:|
 | <15                 |      4.67088 |        313.495 |   5.54733 |
@@ -66,7 +65,6 @@ Next, I created a table aggregating the average rating, calories, and number of 
 | 30-60               |      4.60655 |        445.806 |  11.4932  |
 | 1-2 hrs             |      4.62744 |        558.003 |  13.1389  |
 | 2+ hrs              |      4.59355 |        553.625 |  12.3121  |
-</center>
 
 The table shows that recipes that take longer to make tend to have lower ratings, more calories, and more steps.
 
@@ -125,7 +123,7 @@ The regularization hyperparameter that performed the best was alpha=0.03125 or $
 These hyperparameters were selected using cross-validation. The final model's performance is as follows:
 
 - Mean Squared Error: 29.4196790148663
-- $$R^2$$ Score: 0.2610405235715909
+- R^2 Score: 0.2610405235715909
 
 The final model is an improvement over the baseline model, with a lower mean squared error and a higher R^2 score, indicating that the model explains more of the variance in the number of steps in the recipes. This increase in performance is likely due to the addition of features that are more likely related to the number of steps in a recipe, and the use of a more complex model that can capture non-linear relationships between the features and the target variable. However, there is still room for improvement, as the R^2 score is still relatively low.
 
