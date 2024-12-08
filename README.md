@@ -125,7 +125,7 @@ The regularization hyperparameter that performed the best was alpha=0.03125 or $
 These hyperparameters were selected using cross-validation. The final model's performance is as follows:
 
 - Mean Squared Error: 29.4196790148663
-- R^2 Score: 0.2610405235715909
+- $$R^2$$ Score: 0.2610405235715909
 
 The final model is an improvement over the baseline model, with a lower mean squared error and a higher R^2 score, indicating that the model explains more of the variance in the number of steps in the recipes. This increase in performance is likely due to the addition of features that are more likely related to the number of steps in a recipe, and the use of a more complex model that can capture non-linear relationships between the features and the target variable. However, there is still room for improvement, as the R^2 score is still relatively low.
 
