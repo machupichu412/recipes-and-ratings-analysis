@@ -35,7 +35,7 @@ This involved loading the data from the recipe file, which contained the recipe 
 <iframe
   src="assets/n_step_dist.html"
   width="100%"
-  height="600"
+  height="400"
   frameborder="0"
   display= "block"
   margin="0"
@@ -47,7 +47,7 @@ This involved loading the data from the recipe file, which contained the recipe 
 <iframe
   src="assets/N_Steps_vs_N_Ingredients.html"
   width="100%"
-  height="600"
+  height="400"
   frameborder="0"
   display= "block"
   margin="0"
@@ -58,6 +58,7 @@ This plot shows the relationship between the number of steps and the number of i
 <!-- Embed at least one grouped table or pivot table in your website and explain its significance. -->
 Next, I created a table aggregating the average rating, calories, and number of steps for recipes in different time ranges:
 
+<center>
 | time_range (mins)   |   avg_rating |   calories (#) |   n_steps |
 |:--------------------|-------------:|---------------:|----------:|
 | <15                 |      4.67088 |        313.495 |   5.54733 |
@@ -65,7 +66,7 @@ Next, I created a table aggregating the average rating, calories, and number of 
 | 30-60               |      4.60655 |        445.806 |  11.4932  |
 | 1-2 hrs             |      4.62744 |        558.003 |  13.1389  |
 | 2+ hrs              |      4.59355 |        553.625 |  12.3121  |
-
+</center>
 
 The table shows that recipes that take longer to make tend to have lower ratings, more calories, and more steps.
 
